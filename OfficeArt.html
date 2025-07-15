@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Productive Keyboard — Because culture starts at your fingertips
+    </title>
+
+    <style>
+      /* General Layout */
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        font-family: "Segoe UI", "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("https://plus.unsplash.com/premium_photo-1661328065693-ee611d7dbafe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D")
+          no-repeat center center fixed;
+        background-size: cover;
+        opacity: 0.9;
+        z-index: -2;
+      }
+
+      body::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+      }
+
+      .quote {
+        text-align: end;
+        margin: 10px;
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: fadeIn 1.2s ease-out forwards;
+        animation-delay: 0.3s;
+      }
+
+      .keyboard {
+        background: rgba(243, 244, 247, 0.95);
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 1000px;
+        width: 95%;
+        margin: 40px 0;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 12px;
+        justify-content: center;
+      }
+
+      .key {
+        width: 50px;
+        height: 50px;
+        background: #f3f4f7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        user-select: none;
+        cursor: pointer;
+        padding: 4px 0;
+      }
+
+      .key .icon {
+        font-size: 18px;
+        margin-top: 2px;
+        color: #444;
+      }
+
+      .wide {
+        width: 70px;
+      }
+      .wider {
+        width: 80px;
+      }
+      .widest {
+        width: 100px;
+      }
+      .extra-wide {
+        width: 240px;
+      }
+
+      .key:hover {
+        transform: scale(1.05);
+      }
+
+      .key:active {
+        transform: scale(0.96);
+        background: #eaeaea;
+      }
+      /* Quote animation styling */
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .keyboard {
+          padding: 20px;
+        }
+
+        .key {
+          width: 40px;
+          height: 40px;
+          font-size: 12px;
+        }
+
+        .wide {
+          width: 60px;
+        }
+        .wider {
+          width: 70px;
+        }
+        .widest {
+          width: 90px;
+        }
+        .extra-wide {
+          width: 200px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .row {
+          gap: 4px;
+        }
+
+        .key {
+          width: 35px;
+          height: 35px;
+          font-size: 11px;
+        }
+
+        .wide {
+          width: 50px;
+        }
+        .wider {
+          width: 60px;
+        }
+        .widest {
+          width: 75px;
+        }
+        .extra-wide {
+          width: 160px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="keyboard">
+      <!-- Row 1: Escape + Function Keys with Icons -->
+      <div class="row">
+        <div class="key wide">Esc</div>
+        <div class="key">F1<br /><span class="icon">&#127769;</span></div>
+        <!-- Brightness Down -->
+        <div class="key">F2<br /><span class="icon">&#9728;</span></div>
+        <!-- Brightness Up -->
+        <div class="key">F3<br /><span class="icon">&#128263;</span></div>
+        <!-- Mute -->
+        <div class="key">F4<br /><span class="icon">&#128265;</span></div>
+        <!-- Volume Down -->
+        <div class="key">F5<br /><span class="icon">&#128266;</span></div>
+        <!-- Volume Up -->
+        <div class="key">F6<br /><span class="icon">&#9208;</span></div>
+        <!-- Play/Pause -->
+        <div class="key">F7<br /><span class="icon">&#9194;</span></div>
+        <!-- Previous Track -->
+        <div class="key">F8<br /><span class="icon">&#9193;</span></div>
+        <!-- Next Track -->
+        <div class="key">F9</div>
+        <div class="key">F10</div>
+        <div class="key">F11</div>
+        <div class="key">F12</div>
+      </div>
+
+      <!-- Row 2: Number Row -->
+      <div class="row">
+        <div class="key">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">=</div>
+        <div class="key wide">Backspace</div>
+      </div>
+
+      <!-- Row 3: QWERTY Row -->
+      <div class="row">
+        <div class="key wider">Tab</div>
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key">\</div>
+      </div>
+
+      <!-- Row 4: ASDF Row -->
+      <div class="row">
+        <div class="key wider">Caps</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key widest">Enter</div>
+      </div>
+
+      <!-- Row 5: ZXCV Row -->
+      <div class="row">
+        <div class="key widest">Shift</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key widest">Shift</div>
+      </div>
+
+      <!-- Row 6: Control Keys -->
+      <div class="row">
+        <div class="key">Ctrl</div>
+        <div class="key">Win</div>
+        <div class="key">Alt</div>
+        <div class="key extra-wide">Space</div>
+        <div class="key">Alt</div>
+        <div class="key">Fn</div>
+        <div class="key">Menu</div>
+        <div class="key">Ctrl</div>
+      </div>
+      <!-- 
+  A quiet, thematic quote that captures the spirit of office culture 
+  and highlights the meaningfulness behind every keystroke.
+  -->
+      <div class="quote">
+        <em>“In every keystroke, there’s a quiet act of ambition.”</em>
+      </div>
+    </div>
+  </body>
+</html>
