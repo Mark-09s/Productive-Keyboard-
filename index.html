@@ -30,6 +30,8 @@
         min-height: 100vh;
         position: relative;
         overflow: hidden;
+        max-height: 90vh;
+        overflow-y: auto;
       }
 
       body::before {
@@ -182,6 +184,13 @@
         }
         .extra-wide {
           width: 160px;
+        }
+
+        @media (min-width: 1200px) {
+          .keyboard {
+            transform: scale(0.95);
+            transform-origin: center top;
+          }
         }
       }
     </style>
