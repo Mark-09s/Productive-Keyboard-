@@ -6,6 +6,37 @@
     <title>
       The Productive Keyboard — Because culture starts at your fingertips
     </title>
+    <meta
+      name="description"
+      content="A visually elegant, responsive HTML/CSS keyboard inspired by office culture. Designed with accessibility, responsiveness, and cultural storytelling in mind." />
+    <meta name="author" content="Mark Adah" />
+    <meta
+      name="keywords"
+      content="keyboard, HTML, CSS, productivity, frontend challenge, office culture, accessibility, responsive design" />
+    <meta
+      name="description"
+      content="A visually elegant, responsive HTML/CSS keyboard inspired by office culture. Designed with accessibility, responsiveness, and cultural storytelling in mind." />
+    <meta name="author" content="Mark Adah" />
+    <meta
+      name="keywords"
+      content="keyboard, HTML, CSS, productivity, frontend challenge, office culture, accessibility, responsive design" />
+    <meta property="og:title" content="The Productive Keyboard" />
+    <meta
+      property="og:description"
+      content="A cultural HTML/CSS keyboard interface designed for productivity and storytelling." />
+    <meta
+      property="og:image"
+      content="https://plus.unsplash.com/premium_photo-1661328065693-ee611d7dbafe?w=800" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Productive Keyboard" />
+    <meta
+      name="twitter:description"
+      content="Explore productivity at your fingertips — a pure HTML & CSS keyboard interface." />
+    <meta
+      name="twitter:image"
+      content="https://plus.unsplash.com/premium_photo-1661328065693-ee611d7dbafe?w=800" />
+    <link rel="icon" href="https://fav.farm/⌨️" />
     <style>
       body {
         margin: 0;
@@ -39,7 +70,7 @@
         z-index: -1;
       }
 
-      .keyboard {
+      main.keyboard {
         background: rgba(243, 244, 247, 0.95);
         padding: 20px;
         border-radius: 18px;
@@ -73,6 +104,11 @@
         user-select: none;
         cursor: pointer;
         padding: 3px 0;
+      }
+
+      .key:focus {
+        outline: 2px solid #4c8bf5;
+        outline-offset: 2px;
       }
 
       .key .icon {
@@ -112,6 +148,7 @@
         animation-delay: 0.3s;
         font-style: italic;
         font-size: 0.95rem;
+        color: black;
       }
 
       @keyframes fadeIn {
@@ -166,119 +203,124 @@
   </head>
 
   <body>
-    <div class="keyboard">
-      <!-- Row 1: Escape + Function Keys with Icons -->
-      <div class="row">
-        <div class="key wide">Esc</div>
-        <div class="key">F1<br /><span class="icon">&#127769;</span></div>
-        <!-- Brightness Down -->
-        <div class="key">F2<br /><span class="icon">&#9728;</span></div>
-        <!-- Brightness Up -->
-        <div class="key">F3<br /><span class="icon">&#128263;</span></div>
-        <!-- Mute -->
-        <div class="key">F4<br /><span class="icon">&#128265;</span></div>
-        <!-- Volume Down -->
-        <div class="key">F5<br /><span class="icon">&#128266;</span></div>
-        <!-- Volume Up -->
-        <div class="key">F6<br /><span class="icon">&#9208;</span></div>
-        <!-- Play/Pause -->
-        <div class="key">F7<br /><span class="icon">&#9194;</span></div>
-        <!-- Previous Track -->
-        <div class="key">F8<br /><span class="icon">&#9193;</span></div>
-        <!-- Next Track -->
-        <div class="key">F9</div>
-        <div class="key">F10</div>
-        <div class="key">F11</div>
-        <div class="key">F12</div>
-      </div>
+    <main
+      class="keyboard"
+      role="main"
+      aria-label="Interactive keyboard interface">
+      <div class="keyboard">
+        <!-- Row 1: Escape + Function Keys with Icons -->
+        <div class="row">
+          <div class="key wide">Esc</div>
+          <div class="key">F1<br /><span class="icon">&#127769;</span></div>
+          <!-- Brightness Down -->
+          <div class="key">F2<br /><span class="icon">&#9728;</span></div>
+          <!-- Brightness Up -->
+          <div class="key">F3<br /><span class="icon">&#128263;</span></div>
+          <!-- Mute -->
+          <div class="key">F4<br /><span class="icon">&#128265;</span></div>
+          <!-- Volume Down -->
+          <div class="key">F5<br /><span class="icon">&#128266;</span></div>
+          <!-- Volume Up -->
+          <div class="key">F6<br /><span class="icon">&#9208;</span></div>
+          <!-- Play/Pause -->
+          <div class="key">F7<br /><span class="icon">&#9194;</span></div>
+          <!-- Previous Track -->
+          <div class="key">F8<br /><span class="icon">&#9193;</span></div>
+          <!-- Next Track -->
+          <div class="key">F9</div>
+          <div class="key">F10</div>
+          <div class="key">F11</div>
+          <div class="key">F12</div>
+        </div>
 
-      <!-- Row 2: Number Row -->
-      <div class="row">
-        <div class="key">~</div>
-        <div class="key">1</div>
-        <div class="key">2</div>
-        <div class="key">3</div>
-        <div class="key">4</div>
-        <div class="key">5</div>
-        <div class="key">6</div>
-        <div class="key">7</div>
-        <div class="key">8</div>
-        <div class="key">9</div>
-        <div class="key">0</div>
-        <div class="key">-</div>
-        <div class="key">=</div>
-        <div class="key wide">Backspace</div>
-      </div>
+        <!-- Row 2: Number Row -->
+        <div class="row">
+          <div class="key">~</div>
+          <div class="key">1</div>
+          <div class="key">2</div>
+          <div class="key">3</div>
+          <div class="key">4</div>
+          <div class="key">5</div>
+          <div class="key">6</div>
+          <div class="key">7</div>
+          <div class="key">8</div>
+          <div class="key">9</div>
+          <div class="key">0</div>
+          <div class="key">-</div>
+          <div class="key">=</div>
+          <div class="key wide">Backspace</div>
+        </div>
 
-      <!-- Row 3: QWERTY Row -->
-      <div class="row">
-        <div class="key wider">Tab</div>
-        <div class="key">Q</div>
-        <div class="key">W</div>
-        <div class="key">E</div>
-        <div class="key">R</div>
-        <div class="key">T</div>
-        <div class="key">Y</div>
-        <div class="key">U</div>
-        <div class="key">I</div>
-        <div class="key">O</div>
-        <div class="key">P</div>
-        <div class="key">[</div>
-        <div class="key">]</div>
-        <div class="key">\</div>
-      </div>
+        <!-- Row 3: QWERTY Row -->
+        <div class="row">
+          <div class="key wider">Tab</div>
+          <div class="key">Q</div>
+          <div class="key">W</div>
+          <div class="key">E</div>
+          <div class="key">R</div>
+          <div class="key">T</div>
+          <div class="key">Y</div>
+          <div class="key">U</div>
+          <div class="key">I</div>
+          <div class="key">O</div>
+          <div class="key">P</div>
+          <div class="key">[</div>
+          <div class="key">]</div>
+          <div class="key">\</div>
+        </div>
 
-      <!-- Row 4: ASDF Row -->
-      <div class="row">
-        <div class="key wider">Caps</div>
-        <div class="key">A</div>
-        <div class="key">S</div>
-        <div class="key">D</div>
-        <div class="key">F</div>
-        <div class="key">G</div>
-        <div class="key">H</div>
-        <div class="key">J</div>
-        <div class="key">K</div>
-        <div class="key">L</div>
-        <div class="key">;</div>
-        <div class="key">'</div>
-        <div class="key widest">Enter</div>
-      </div>
+        <!-- Row 4: ASDF Row -->
+        <div class="row">
+          <div class="key wider">Caps</div>
+          <div class="key">A</div>
+          <div class="key">S</div>
+          <div class="key">D</div>
+          <div class="key">F</div>
+          <div class="key">G</div>
+          <div class="key">H</div>
+          <div class="key">J</div>
+          <div class="key">K</div>
+          <div class="key">L</div>
+          <div class="key">;</div>
+          <div class="key">'</div>
+          <div class="key widest">Enter</div>
+        </div>
 
-      <!-- Row 5: ZXCV Row -->
-      <div class="row">
-        <div class="key widest">Shift</div>
-        <div class="key">Z</div>
-        <div class="key">X</div>
-        <div class="key">C</div>
-        <div class="key">V</div>
-        <div class="key">B</div>
-        <div class="key">N</div>
-        <div class="key">M</div>
-        <div class="key">,</div>
-        <div class="key">.</div>
-        <div class="key">/</div>
-        <div class="key widest">Shift</div>
-      </div>
+        <!-- Row 5: ZXCV Row -->
+        <div class="row">
+          <div class="key widest">Shift</div>
+          <div class="key">Z</div>
+          <div class="key">X</div>
+          <div class="key">C</div>
+          <div class="key">V</div>
+          <div class="key">B</div>
+          <div class="key">N</div>
+          <div class="key">M</div>
+          <div class="key">,</div>
+          <div class="key">.</div>
+          <div class="key">/</div>
+          <div class="key widest">Shift</div>
+        </div>
 
-      <!-- Row 6: Control Keys -->
-      <div class="row">
-        <div class="key">Ctrl</div>
-        <div class="key">Win</div>
-        <div class="key">Alt</div>
-        <div class="key extra-wide">Space</div>
-        <div class="key">Alt</div>
-        <div class="key">Fn</div>
-        <div class="key">Menu</div>
-        <div class="key">Ctrl</div>
-      </div>
-      <!-- 
+        <!-- Row 6: Control Keys -->
+        <div class="row">
+          <div class="key">Ctrl</div>
+          <div class="key">Win</div>
+          <div class="key">Alt</div>
+          <div class="key extra-wide">Space</div>
+          <div class="key">Alt</div>
+          <div class="key">Fn</div>
+          <div class="key">Menu</div>
+          <div class="key">Ctrl</div>
+        </div>
+        <!-- 
   A quiet, thematic quote that captures the spirit of office culture 
   and highlights the meaningfulness behind every keystroke.
   -->
-      <div class="quote">
-        <em>“In every keystroke, there’s a quiet act of ambition.”</em>
+        <div class="quote" aria-hidden="true">
+          <em>“In every keystroke, there’s a quiet act of ambition.”</em>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
