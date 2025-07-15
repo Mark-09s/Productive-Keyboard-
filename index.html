@@ -6,7 +6,6 @@
     <title>
       The Productive Keyboard — Because culture starts at your fingertips
     </title>
-
     <style>
       /* General Layout */
       body {
@@ -15,6 +14,7 @@
         background: #000;
         font-family: "Segoe UI", "Inter", sans-serif;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
@@ -48,6 +48,9 @@
         transform: translateY(-10px);
         animation: fadeIn 1.2s ease-out forwards;
         animation-delay: 0.3s;
+        font-style: italic;
+        color: #dddddd;
+        font-size: 0.95rem;
       }
 
       .keyboard {
@@ -113,6 +116,7 @@
         transform: scale(0.96);
         background: #eaeaea;
       }
+
       /* Quote animation styling */
       @keyframes fadeIn {
         to {
