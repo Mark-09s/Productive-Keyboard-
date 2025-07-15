@@ -7,7 +7,17 @@
       The Productive Keyboard — Because culture starts at your fingertips
     </title>
     <style>
-      /* General Layout */
+      /* General Layout Styling*/
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         padding: 0;
@@ -42,15 +52,15 @@
       }
 
       .quote {
-        text-align: end;
-        margin: 10px;
+        text-align: center;
+        margin-top: 20px;
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(10px);
         animation: fadeIn 1.2s ease-out forwards;
         animation-delay: 0.3s;
         font-style: italic;
         color: #dddddd;
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
 
       .keyboard {
