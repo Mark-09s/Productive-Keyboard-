@@ -39,7 +39,7 @@ Although I wasn't eligible to officially submit it due to an age restriction (yo
 
 ## 📂 Live Preview
 
-- 🌐 [Live Project](https://your-username.github.io/productive-keyboard) 
+- 🌐 [Live Project](https://Mark-09s.github.io/productive-keyboard-) 
 - 🔗 [Dev.to Article](https://dev.to/your-post-link)
 
 ---
@@ -72,4 +72,3 @@ Want to connect?
 
 If you’re a young developer like me — don’t wait to be told you're ready.  
 Create. Share. Learn.  
-**Your story starts the moment you decide not to give up.**
