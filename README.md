@@ -39,7 +39,9 @@ Although I wasn't eligible to officially submit it due to an age restriction (yo
 
 ## 📂 Live Preview
 
-- 🌐 [Live Project](https://Mark-09s.github.io/productive-keyboard-) 
+- 🌐 [Live Project](
+https://mark-09s.github.io/Productive-Keyboard-
+) 
 - 🔗 [Dev.to Article](https://dev.to/your-post-link)
 
 ---
